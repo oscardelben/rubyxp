@@ -1,0 +1,40 @@
+<p>With this website you can easily test your ruby regular expressions directly in your browser.</p>
+
+<p>Type your regular expression below, or <a href="#" onclick="fillExample(); return false">fill an example</a>.</p>
+
+<div id="console">
+  <div id="console-top"></div>
+  
+  <div id="console-middle">
+    
+    <div id="form">
+      
+      <form id="mainForm" action="#" onSubmit="perform(); return false">
+        <p>
+          <%= label_tag :regexp, 'Your regular expression (required)', :class => 'indent' %><br />
+          <span class="slash">/</span><%= text_field_tag :regexp %><span class="slash">/</span><%= text_field_tag :caret %>
+        </p>
+
+        <p class="indent">
+          <%= label_tag :string_comparison, 'String comparison (required)' %><br />
+          <%= text_area_tag :string_comparison %>
+        </p>
+
+        <p class="indent">
+          <%= label_tag :replacement, 'Replacement for sub/gsub (optional)' %><br />
+          <%= text_field_tag :replacement %>
+          <%= submit_tag 'Match', :id => 'submit', :class => 'indent' %>
+          <%= image_tag 'spinner.gif', :id => 'spinner', :style => 'display:none' %>
+        </p>
+      
+      </form>
+
+      <div id="result" class="indent"></div>
+    </div>
+    
+  </div>
+  
+  <div id="console-bottom"></div>
+</div>
+
+

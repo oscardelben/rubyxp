@@ -1,0 +1,76 @@
+<strong>Recommended Reading:</strong>
+
+<%= link_to image_tag('prog_lang.jpg', :width => '150'), '/go/createlang', :rel => 'nofollow' %>
+
+<div id="reference">
+
+<strong>regex characters:</strong>
+<dl>
+<dt>.</dt>             <dd>any character except newline</dd>
+<dt>[ ]</dt>           <dd>any single character of set</dd>
+<dt>[^ ]</dt>          <dd>any single character NOT of set</dd>
+<dt>*</dt>             <dd>0 or more previous regular expression</dd>
+<dt>*?</dt>            <dd>0 or more previous regular expression (non-greedy)</dd>
+<dt>+</dt>             <dd>1 or more previous regular expression</dd>
+<dt>+?</dt>            <dd>1 or more previous regular expression (non-greedy)</dd>
+<dt>?</dt>             <dd>0 or 1 previous regular expression</dd>
+<dt>|</dt>             <dd>alternation</dd>
+<dt>( )</dt>           <dd>grouping regular expressions</dd>
+<dt>^</dt>             <dd>beginning of a line or string</dd>
+<dt>$</dt>             <dd>end of a line or string</dd>
+<dt>{m,n}</dt>         <dd>at least m but most n previous regular expression</dd>
+<dt>{m,n}?</dt>        <dd>at least m but most n previous regular expression (non-greedy)</dd>
+<dt>\1-9</dt>          <dd>nth previous captured group</dd>
+<dt>\&</dt>            <dd>whole match</dd>
+<dt>\`</dt>            <dd>pre-match</dd>
+<dt>\'</dt>            <dd>post-match</dd>
+<dt>\+</dt>            <dd>highest group matched</dd>
+<dt>\A</dt>            <dd>beginning of a string</dd>
+<dt>\b</dt>            <dd>backspace(0x08)(inside[]only)</dd>
+<dt>\b</dt>            <dd>word boundary(outside[]only)</dd>
+<dt>\B</dt>            <dd>non-word boundary</dd>
+<dt>\d</dt>            <dd>digit, same as[0-9]</dd>
+<dt>\D</dt>            <dd>non-digit</dd>
+<dt>\S</dt>            <dd>non-whitespace character</dd>
+<dt>\s</dt>            <dd>whitespace character[ \t\n\r\f]</dd>
+<dt>\W</dt>            <dd>non-word character</dd>
+<dt>\w</dt>            <dd>word character[0-9A-Za-z_]</dd>
+<dt>\z</dt>            <dd>end of a string</dd>
+<dt>\Z</dt>            <dd>end of a string, or before newline at the end</dd>
+<dt>(?#)</dt>          <dd>comment</dd>
+<dt>(?:)</dt>          <dd>grouping without backreferences</dd>
+<dt>(?=)</dt>          <dd>zero-width positive look-ahead assertion</dd>
+<dt>(?!)</dt>          <dd>zero-width negative look-ahead assertion</dd>
+<dt>(?>)</dt>          <dd>nested anchored sub-regexp. stops backtracking.</dd>
+<dt>(?imx-imx)</dt>    <dd>turns on/off imx options for rest of regexp.</dd>
+<dt>(?imx-imx:re)</dt> <dd>turns on/off imx options, localized in group.</dd>
+</dl>
+
+<strong>special character classes:</strong>
+<dl>
+<dt>[:alnum:]</dt>   <dd>alpha-numeric characters</dd>
+<dt>[:alpha:]</dt>   <dd>alphabetic characters</dd>
+<dt>[:blank:]</dt>   <dd>whitespace - does not include tabs, carriage returns, etc</dd>
+<dt>[:cntrl:]</dt>   <dd>control characters</dd>
+<dt>[:digit:]</dt>   <dd>decimal digits</dd>
+<dt>[:graph:]</dt>   <dd>graph characters</dd>
+<dt>[:lower:]</dt>   <dd>lower case characters</dd>
+<dt>[:print:]</dt>   <dd>printable characters</dd>
+<dt>[:punct:]</dt>   <dd>punctuation characters</dd>
+<dt>[:space:]</dt>   <dd>whitespace, including tabs, carriage returns, etc</dd>
+<dt>[:upper:]</dt>   <dd>upper case characters</dd>
+<dt>[:xdigit:]</dt>  <dd>hexadecimal digits</dd>
+</dl>
+
+<strong>options:</strong>
+<dl>
+<dt>/i</dt>         <dd>case insensitive</dd>
+<dt>/o</dt>         <dd>only interpolate #{} blocks once</dd>
+<dt>/m</dt>         <dd>multiline mode - '.' will match newline</dd>
+<dt>/x</dt>         <dd>extended mode - whitespace is ignored</dd>
+<dt>/[neus]</dt>    <dd>encoding: none, EUC, UTF-8, SJIS, respectively</dd>
+</dl>
+
+
+<%= link_to 'Credits', 'http://www.zenspider.com/Languages/Ruby/QuickRef.html#11' %>
+</div>

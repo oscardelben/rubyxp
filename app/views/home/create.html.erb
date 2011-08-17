@@ -1,0 +1,18 @@
+<h4>Result</h4>
+
+<% if @rubyxp.match_data.blank? %>
+  No Match
+<% else %>
+
+  <span class="result-title">Match:</span><br />
+  <div id="match-data" class="indent-20">
+    <span class="result-text"><%=raw pretty_match %></span> <%=raw explanation('$&') %>
+  </div>
+
+  <div id="group_matches"><%=raw print_group_matches %></div>
+
+  <% unless @rubyxp.sub.blank? %>
+    <div id="sub"><%=raw print_sub %></div>
+    <div id="gsub"><%=raw print_gsub %></div>
+  <% end %>
+<% end %>

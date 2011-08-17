@@ -1,0 +1,144 @@
+html, body {
+  background:#fff;
+  color:#4b2e2e;
+  font-family: Courier;
+}
+
+h1 {
+  margin-top:0.5em;
+}
+
+h3 {
+  margin-top:2em;
+}
+
+a {
+  color:blue;
+}
+
+#console {
+  width:931px;
+}
+
+#console-top {
+  background:url('console-top.png') no-repeat;
+  height:109px;
+}
+
+#console-middle {
+  background:url('console-middle.png') repeat-y;
+  padding-bottom:20px;
+}
+
+#console-bottom {
+  background:url('console-bottom.png') no-repeat;
+  height:89px;
+}
+
+#form {
+  padding: 0 60px;
+}
+
+/* form */
+
+input {
+  border: 0;
+  border-bottom:1px dashed #4b2e2e;
+  background:#e0dac2;
+  height:28px;
+}
+
+#submit {
+  border:1px solid #4b2e2e;
+  background:#4b2e2e;
+  color:#e0dac2;
+}
+
+textarea {
+  border:1px solid #4b2e2e;
+  background:#e0dac2;
+}
+
+.slash {
+  font-size:28px;
+  margin:0 5px;
+  vertical-align:middle;
+}
+
+#regexp {
+  width:400px;
+  font-size:12px;
+}
+
+#caret {
+  width:50px;
+  font-size:12px;
+}
+
+#string_comparison {
+  width:480px;
+  height:80px;
+}
+
+
+#replacement {
+  width:390px;
+  font-size:12px;
+}
+
+.indent {
+  margin-left:20px;
+}
+
+
+/* Sidebar */
+
+#reference {
+  background:#f1f1f1;
+  padding:2px;
+}
+
+#reference dl {
+  margin:0;
+  padding:5px;
+}
+
+#reference dt {
+  font-size:12px
+}
+
+#reference dl, #reference dd {
+  margin:0 0 1em 1em;
+  font-size:11px;
+}
+
+#reference a {
+  margin-left:1em;
+  font-size:10px;
+}
+
+
+/* Result */
+
+#result {
+  margin-top:70px;
+}
+
+.indent-20 {
+  margin-left:20px;
+}
+
+#group_matches, #sub, #gsub {
+  margin-top:20px;
+}
+
+code {
+  background:#4B2E2E;
+  color: #fff;
+  padding:2px;
+  font-size:11px;
+}
+
+#footer {
+  margin-top:4em;
+}
