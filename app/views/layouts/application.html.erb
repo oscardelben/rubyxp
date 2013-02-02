@@ -6,16 +6,17 @@
 		<title>Rubyxp - Ruby regular expression tester</title>
 		<%= stylesheet_link_tag 'reset', 'text', '960', 'base' %>
 		<%= javascript_include_tag 'jquery', 'application' %>
+    <%= csrf_meta_tag %>
 	</head>
 	
 	<body>
-    
+
     <a href="http://github.com/oscardelben/rubyxp"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub" /></a>
-    
+
     <div class="container_12">
 
   		<h1>Ruby Regular Expression Tester</h1>
-      
+
       <div class="grid_9">
   		  <%= yield %>
       </div>

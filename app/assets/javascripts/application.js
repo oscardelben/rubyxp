@@ -24,21 +24,21 @@ function toggle_spinner() {
 }
 
 function perform() {
-  regexp_string = $('#regexp').attr('value');
-  caret = $('#caret').attr('value');
-  text = $('#string_comparison').attr('value');
-  replacement = $('#replacement').attr('value');
+  regexp_string = $('#regexp').val();
+  caret = $('#caret').val();
+  text = $('#string_comparison').val();
+  replacement = $('#replacement').val();
 
   post_data = { regexp: regexp_string, caret: caret, string_comparison: text, replacement: replacement } 
-  
-  
+
+
   $.post('/home/create', post_data, function(data) {
       toggle_spinner(); // Without this, it doesn't work. WTF jquery?
       $('#result').html('');
       $('#result').html(data);
   })
-  
+
   toggle_spinner();
-  
+
 }
 

@@ -4,11 +4,11 @@
 
 <div id="console">
   <div id="console-top"></div>
-  
+
   <div id="console-middle">
-    
+
     <div id="form">
-      
+
       <form id="mainForm" action="#" onSubmit="perform(); return false">
         <p>
           <%= label_tag :regexp, 'Your regular expression (required)', :class => 'indent' %><br />
@@ -26,14 +26,14 @@
           <%= submit_tag 'Match', :id => 'submit', :class => 'indent' %>
           <%= image_tag 'spinner.gif', :id => 'spinner', :style => 'display:none' %>
         </p>
-      
+
       </form>
 
       <div id="result" class="indent"></div>
     </div>
-    
+
   </div>
-  
+
   <div id="console-bottom"></div>
 </div>
 
